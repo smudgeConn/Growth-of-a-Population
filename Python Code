@@ -1,0 +1,9 @@
+def nb_year(p0, percent, aug, p):
+    percentage = percent*.01
+    population = p0
+    years = 0
+    while population < p:
+        population += population * percentage + aug
+        years += 1
+    return years
+        
